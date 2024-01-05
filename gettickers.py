@@ -45,7 +45,6 @@ def to_csv(data, file, ticker_only=False):
         if ticker_only:
             csv_columns = ['symbol']
             writer = csv.writer(outfile)
-            print(data)
             for row in data:
                 writer.writerow([row['symbol']]) # writerow expects a list
         else:
@@ -85,7 +84,6 @@ def get_all_listings():
 
     url = f'https://www.alphavantage.co/query?function=LISTING_STATUS&apikey={api_key}'
     r = requests.get(url)
-    print(r)
 
     content_type = r.headers['Content-Type']
     if 'download' in content_type:
