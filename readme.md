@@ -1,3 +1,5 @@
+# Stock Ticker Dataset
+
 This assumes you have python3 installed on your system.
 
 ### Install Dependenies
