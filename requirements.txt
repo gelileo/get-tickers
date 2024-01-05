@@ -1,0 +1,5 @@
+fire
+pandas
+tqdm
+yfinance
+python-dotenv
